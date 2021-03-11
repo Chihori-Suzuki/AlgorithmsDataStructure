@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2E4AAA3325F820DB0011EBB6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AAA3225F820DB0011EBB6 /* main.swift */; };
 		2E4AAA3C25F8211C0011EBB6 /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AAA3B25F8211C0011EBB6 /* Recursion.swift */; };
+		2E4AAA4225F975E80011EBB6 /* ExhaustiveSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4AAA4125F975E80011EBB6 /* ExhaustiveSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		2E4AAA3225F820DB0011EBB6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		2E4AAA3B25F8211C0011EBB6 /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		2E4AAA3F25F82F960011EBB6 /* provinces.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = provinces.txt; sourceTree = "<group>"; };
+		2E4AAA4125F975E80011EBB6 /* ExhaustiveSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhaustiveSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				2E4AAA3B25F8211C0011EBB6 /* Recursion.swift */,
 				2E4AAA3F25F82F960011EBB6 /* provinces.txt */,
+				2E4AAA4125F975E80011EBB6 /* ExhaustiveSearch.swift */,
 			);
 			path = Recursion;
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4AAA4225F975E80011EBB6 /* ExhaustiveSearch.swift in Sources */,
 				2E4AAA3C25F8211C0011EBB6 /* Recursion.swift in Sources */,
 				2E4AAA3325F820DB0011EBB6 /* main.swift in Sources */,
 			);

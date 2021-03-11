@@ -11,4 +11,5 @@ import Foundation
 
 //print(revertseLines(13))
 
-print(evaluate("1+(1+4)*1+(3+2)+1"))
+//print(evaluate("(1+4)*1+(3+2)"))
+print(evaluate("((1+4)+(1+(5*2)))"))

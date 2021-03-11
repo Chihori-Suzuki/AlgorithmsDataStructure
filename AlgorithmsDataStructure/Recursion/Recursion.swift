@@ -57,20 +57,16 @@ func revertseLines(_ line: Int)  {
 // 5. evaluate
 
 func evaluate(_ ex: String) -> Int {
-    //    if ex.count <= 1 { return Int(ex)!}
+    var trimedEx = ex.trimmingCharacters(in: .whitespacesAndNewlines)
     
     //1+(1+4)*1+(3+2)+1
-    if ex.contains("(") {
-        let startPlace = ex.lastIndex(of: "(")!
-        let indexOfLeftPar = ex.index(ex.startIndex, offsetBy: startPlace.utf16Offset(in: ex) + 1) // place of "("
+    if trimedEx.contains("(") {
+        let startPlace = trimedEx.lastIndex(of: "(")!
+        let indexOfLeftPar = trimedEx.index(trimedEx.startIndex, offsetBy: startPlace.utf16Offset(in: trimedEx) + 1) // place of "("
         
-        let newEx = ex[indexOfLeftPar...]
+        let newEx = trimedEx[indexOfLeftPar...]
         let endPlace = newEx.firstIndex(of: ")")!
         let indexOfRightPar = newEx.index(indexOfLeftPar, offsetBy: endPlace.utf16Offset(in: newEx) - 1) // place of ")"
-        
-        //        print(ex[ex.index(after: startPlace)])
-        //        print(ex[indexOfRightPar])
-        //        print(newEx[...indexOfRightPar])
         
         let removeStr = String(newEx[...indexOfRightPar])
         
@@ -78,19 +74,19 @@ func evaluate(_ ex: String) -> Int {
         let answer = expression.expressionValue(with: nil, context: nil) as! Int
         print(answer)
         
-        let firstStr = ex[...ex.index(ex.startIndex, offsetBy: startPlace.utf16Offset(in: ex) - 1)] //
-        let lastStr = newEx[newEx.index(indexOfLeftPar, offsetBy: endPlace.utf16Offset(in: newEx) + 1)...] //
-        let newStr = firstStr + String(answer) + lastStr
-        
-        return evaluate(String(newStr))
+        if let range = trimedEx.range(of: "(\(removeStr))") {
+            trimedEx.replaceSubrange(range, with: "\(answer)")
+        }
+        return evaluate(trimedEx)
         
     } else {
-        let expression = NSExpression(format: ex)
-        let answer = expression.expressionValue(with: nil, context: nil) as! Int
-        return answer
+        return Int(ex)!
     }
-    //    return 1
 }
 
 
-// ((1+3)+((1+2)*5))
+// (1+3)+((1+2)*5) -> (1+3)+(3*5)
+// (1+3)+(3*5) -> (1+3)+15
+// (1+3)+15 -> 4+15
+// 4+15 -> 19
+     
