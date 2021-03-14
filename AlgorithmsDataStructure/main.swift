@@ -12,4 +12,18 @@ import Foundation
 //print(revertseLines(13))
 
 //print(evaluate("(1+4)*1+(3+2)"))
-print(evaluate("((1+4)+(1+(5*2)))"))
+//print(evaluate("((1+4)+(1+(5*2)))"))
+
+//permutation("riiq")
+//permutationUnique("park", "", )
+
+//rollDiceSum2(n: 3, desiredSum: 5)
+//print("***************************")
+//rollDiceSum(n: 3, desiredSum: 5)
+
+//print(readBinaryWatch(2))
+
+var arr = [1,8,3,5,6,4,9,7]
+var start = arr.startIndex
+var end = arr.count - 1
+print(quickSort(&arr, &start, &end))
