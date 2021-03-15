@@ -13,12 +13,10 @@ func crawl() {
     let currentDir = fileManager.currentDirectoryPath // currentPath
     guard let result = currentDir.lastIndex(of: "/") else { return }
     let fileName = "\(currentDir[currentDir.index(result, offsetBy: 1)... ])"
-//    print(currentDir)
     getFileList(currentDir, fileName, -1, "")
 }
 
 func getFileList(_ currentPath: String, _ fileName: String,_ lastIndex: Int, _ indent: String) {
-//    print(currentPath)
     let fileManager = FileManager.default
     var lastIndexFlg = lastIndex
     var indentStr = indent
@@ -37,7 +35,6 @@ func getFileList(_ currentPath: String, _ fileName: String,_ lastIndex: Int, _ i
     }
     
     for file in files {
-//        print(indent + file)
         if file == files[endIndex] {
             lastIndexFlg = 1
         } else {
@@ -45,22 +42,5 @@ func getFileList(_ currentPath: String, _ fileName: String,_ lastIndex: Int, _ i
         }
         getFileList(currentPath + "/" + file, file, lastIndexFlg, indentStr + "   ")
     }
-//    print(files)
-    // files=[x86_64-apple-macos.swiftdoc,
-    //        x86_64.swiftdoc,
-        //    x86_64.swiftmodule,
-    //        Project
-    //        x86_64-apple-macos.swiftmodule,
-//    ]
-    
-    
-//    do {
-//        files = try fileManager.contentsOfDirectory(atPath: dirName)
-//        print(files)
-//    } catch {
-//        print("swesewsew")
-//        return ["files"]
-//    }
-//    return files
 }
 
