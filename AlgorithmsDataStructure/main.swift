@@ -23,7 +23,11 @@ import Foundation
 
 //print(readBinaryWatch(2))
 
-var arr = [1,8,3,5,6,4,9,7]
-var start = arr.startIndex
-var end = arr.count - 1
-print(quickSort(&arr, &start, &end))
+//var arr = [1,8,3,5,6,4,9,7]
+//var start = arr.startIndex
+//var end = arr.count - 1
+//print(quickSort(&arr, &start, &end))
+
+crawl()
+//printBinaryExhaustive(3)
+//getFileList("/Users/suzukichihori/Cornerstone/WMAD/Swift_Algorithms&DataStructures/AlgorithmsDataStructure/AlgorithmsDataStructure/main.swift")
