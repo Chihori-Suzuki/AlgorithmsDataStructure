@@ -15,30 +15,31 @@ import Foundation
 /// - You are allowed to change the function header (args or return type)
 /// - Your total recursive calls should not exceed 120 times.
 
-//var count = 0
+var count = 0
+var recCount = 0
+
 func solveQueens(board: inout Board) {
-//	count += 1
-    var choices = [Int]()
-    let size = board.size
-    solveQueensHelper(2, size, &board, choices: &choices)
+    solveQueensHelper(0, &board)
+    print("\(count) possible ways")
+    print(recCount)
 }
 
-func solveQueensHelper(_ n: Int, _ size: Int,_ board: inout Board, choices: inout [Int]) {
-    if n == 0 {
-        print(choices)
-        board.place(row: choices[0], col: choices[1])
-//        print(board)
-        board.remove(row: choices[0], col: choices[1])
-        choices.removeLast()
+func solveQueensHelper(_ row: Int,_ board: inout Board) {
+    recCount += 1
+    if board.size == row {
+        print(recCount)
+        print(board)
+        count += 1
         return
         
     } else {
-        for i in 0...size - 1 {
-            choices.append(i)
-            solveQueensHelper(n - 1, size, &board, choices: &choices)
+        for c in 0...board.size - 1 {
+            if board.isSafe(row: row, col: c) {
+                board.place(row: row, col: c)
+                solveQueensHelper(row + 1, &board)
+                board.remove(row: row, col: c)
+                
+            }
         }
-        
-        choices.removeAll()
     }
 }
-
