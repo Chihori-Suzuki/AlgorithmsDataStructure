@@ -31,3 +31,5 @@ import Foundation
 crawl()
 //printBinaryExhaustive(3)
 //getFileList("/Users/suzukichihori/Cornerstone/WMAD/Swift_Algorithms&DataStructures/AlgorithmsDataStructure/AlgorithmsDataStructure/main.swift")
+//var board = Board(size: 8)
+//solveQueens(board: &board)

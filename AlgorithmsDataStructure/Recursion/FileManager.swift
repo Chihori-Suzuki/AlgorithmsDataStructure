@@ -13,34 +13,32 @@ func crawl() {
     let currentDir = fileManager.currentDirectoryPath // currentPath
     guard let result = currentDir.lastIndex(of: "/") else { return }
     let fileName = "\(currentDir[currentDir.index(result, offsetBy: 1)... ])"
-    getFileList(currentDir, fileName, -1, "")
+    getFileList(currentDir, fileName, true, "")
 }
 
-func getFileList(_ currentPath: String, _ fileName: String,_ lastIndex: Int, _ indent: String) {
+func getFileList(_ currentPath: String, _ fileName: String,_ isLastFile: Bool, _ indent: String) {
     let fileManager = FileManager.default
-    var lastIndexFlg = lastIndex
     var indentStr = indent
     
     guard let files = try? fileManager.contentsOfDirectory(atPath: currentPath) else {
-        print(indent + "└─" + fileName)
+        if isLastFile {
+            print(indent + "└─" + fileName)
+        } else {
+            print(indent + "├─" + fileName)
+        }
         return
     }
-    let endIndex = files.endIndex - 1
-    
-    if lastIndexFlg == 0 {
+    if isLastFile {
+        print(indent+"└─" + fileName)
+    } else {
         print(indent+"├─" + fileName)
         indentStr += "│"
-    } else {
-        print(indent+"└─" + fileName)
     }
     
     for file in files {
-        if file == files[endIndex] {
-            lastIndexFlg = 1
-        } else {
-            lastIndexFlg = 0
-        }
-        getFileList(currentPath + "/" + file, file, lastIndexFlg, indentStr + "   ")
+        let isLastFile = file == files.last
+
+        getFileList(currentPath + "/" + file, file, isLastFile, indentStr + "   ")
     }
 }
 
