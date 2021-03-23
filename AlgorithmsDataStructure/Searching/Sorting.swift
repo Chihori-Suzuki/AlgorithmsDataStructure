@@ -13,7 +13,7 @@ import Foundation
 func bubbleSort<T: Comparable>(_ arr: [T], _ comparator: (T, T) -> Bool) -> [T] {
     guard arr.count > 1 else { return arr }
     var elements = arr
-    for i in 0..<elements.count - 1 {
+    for _ in 0..<elements.count - 1 {
         for j in 1..<elements.count - 1  {
             if comparator(elements[j], elements[j-1]) {
                 let temp = elements[j-1]

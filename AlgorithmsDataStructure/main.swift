@@ -45,13 +45,30 @@ import Foundation
 //    print(item)
 //}
 
-let queue = Queue<Int>()
-queue.enqueue(item: 10)
-//queue.enqueue(item: 9)
-queue.enqueue(item: 8)
-print(queue.dequeue())
-print(queue.description)
+//let queue = Queue<Int>()
+//queue.enqueue(item: 10)
+////queue.enqueue(item: 9)
+//queue.enqueue(item: 8)
+//print(queue.dequeue())
+//print(queue.description)
+//
+//for item in queue {
+//    print(item)
+//}
 
-for item in queue {
-    print(item)
-}
+//var arr = [3,1,4,2,6,5]
+//stream(arr, 2)
+
+//findParent()
+
+//stream(<)
+
+//findParent()
+//test()
+
+//diameter()
+
+
+//whosMyParent()
+
+lca()
