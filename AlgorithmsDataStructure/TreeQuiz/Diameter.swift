@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/*
 func diameter() {
     let mainTree = [ 1: [3: 2],
                      2: [4: 4],
@@ -25,11 +25,8 @@ func diameter() {
 
 func diameterHelper(_ tree: [Int: [Int: Int]] , _ distance : inout [Int], _ visited : inout [Int], _ distanceValue : inout Int) {
     
-    
     for i in tree {
         visited.append(i.key) // first node append
-        
-        
         
         for j in tree[i.key]! {   // i.key ---> 1 to 5
             if visited.contains(j.key) {
@@ -42,8 +39,30 @@ func diameterHelper(_ tree: [Int: [Int: Int]] , _ distance : inout [Int], _ visi
             
             print(distanceValue)
         }
-        
-        
-        
     }
 }
+*/
+
+//func diameter() {
+//    let n = Int(readLine()!)!
+//
+//    var adjList = [[(v: Int, w: Int)]](repeating: [], count: n + 1)
+//
+//    for _ in 0..<n {
+//        let edges = readLine()!.split(separator: " ")
+//        let u = edges[0]
+//        let v == 1
+//        while edges[v] == -1 {
+//            if v % 2 == 1 {
+//                adjList[u].append(edges[v], edges[v + 1])
+//            } else {
+//
+//            }
+//        }
+//
+//
+//    }
+//
+//}
+
+

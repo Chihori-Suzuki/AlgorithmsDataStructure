@@ -71,4 +71,9 @@ import Foundation
 
 //whosMyParent()
 
-lca()
+//lca()
+//adjacencyListDFS()
+
+//cycle()
+
+repeatingSequence()
