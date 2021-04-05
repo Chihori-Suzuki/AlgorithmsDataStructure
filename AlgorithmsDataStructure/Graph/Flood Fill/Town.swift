@@ -15,12 +15,12 @@ func town() {
   
   let dx = [0, 0, 1, -1]
   let dy = [1, -1, 0, 0]
-  
+    
+    let n = Int(readLine()!)!
   var townMap = [[Int]]()
-  var coloredMap = [[Int]](repeating: [Int](repeating: 0, count: 25), count: 25)
-  var houses = [Int](repeating: 0, count: 25 * 25) // the number of houses for each town (index)
+  var coloredMap = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
+  var houses = [Int](repeating: 0, count: n * n) // the number of houses for each town (index)
   
-  let n = Int(readLine()!)!
   for _ in 0..<n {
     let row = readLine()!.map { Int(String($0))! }
     townMap.append(row)
@@ -67,4 +67,20 @@ func town() {
   for num in houses {
     print(num) // the number of houses per town
   }
+//    print("-------------")
+//    for i in townMap {
+//        print(i)
+//    }
+//    print("-------------")
+//
+//    for i in coloredMap {
+//        print(i)
+//    }
+//    print("-------------")
+//
+//    for i in houses {
+//        print(i)
+//    }
+    
+    
 }

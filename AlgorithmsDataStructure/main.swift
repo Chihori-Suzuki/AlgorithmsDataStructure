@@ -76,4 +76,9 @@ import Foundation
 
 //cycle()
 
-repeatingSequence()
+//repeatingSequence()
+
+//diameterMain()
+
+tomatoFarm()
+
