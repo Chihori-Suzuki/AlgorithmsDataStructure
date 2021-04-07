@@ -42,7 +42,6 @@
 		2EFF958D261D730500B40779 /* SushiIterative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF958C261D730500B40779 /* SushiIterative.swift */; };
 		2EFF9590261D734900B40779 /* TopologicalSort1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF958F261D734900B40779 /* TopologicalSort1.swift */; };
 		2EFF9594261D736600B40779 /* TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF9593261D736600B40779 /* TopologicalSort.swift */; };
-		2EFF9597261D93D300B40779 /* TopologicalSort2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF9596261D93D300B40779 /* TopologicalSort2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -95,7 +94,6 @@
 		2EFF958C261D730500B40779 /* SushiIterative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiIterative.swift; sourceTree = "<group>"; };
 		2EFF958F261D734900B40779 /* TopologicalSort1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort1.swift; sourceTree = "<group>"; };
 		2EFF9593261D736600B40779 /* TopologicalSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopologicalSort.swift; sourceTree = "<group>"; };
-		2EFF9596261D93D300B40779 /* TopologicalSort2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +208,6 @@
 				2E333BEB2615395900136BD1 /* SushiReviews.swift */,
 				2EFF95822617DE7200B40779 /* TomatoFarm.swift */,
 				2EFF958F261D734900B40779 /* TopologicalSort1.swift */,
-				2EFF9596261D93D300B40779 /* TopologicalSort2.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -350,7 +347,6 @@
 				2E4AAA7A2607E5B40011EBB6 /* Diameter.swift in Sources */,
 				2EFF95832617DE7200B40779 /* TomatoFarm.swift in Sources */,
 				2EAA3E87260C0D3900FE3FFC /* bipartite.swift in Sources */,
-				2EFF9597261D93D300B40779 /* TopologicalSort2.swift in Sources */,
 				2E4AAA4525F9A5970011EBB6 /* String+DPStringTool.swift in Sources */,
 				2E4AAA5325FD8FA00011EBB6 /* FileManager.swift in Sources */,
 				2EFF9590261D734900B40779 /* TopologicalSort1.swift in Sources */,
