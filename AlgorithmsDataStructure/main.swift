@@ -80,5 +80,9 @@ import Foundation
 
 //diameterMain()
 
-tomatoFarm()
+//tomatoFarm()
 
+//sushiReviews()
+
+//print(canFinish(2, [[1,0]]))
+print(findOrder(4, [[1,0],[2,0],[3,1],[3,2]]))
