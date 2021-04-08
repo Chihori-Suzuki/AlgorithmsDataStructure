@@ -42,6 +42,7 @@
 		2EFF958D261D730500B40779 /* SushiIterative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF958C261D730500B40779 /* SushiIterative.swift */; };
 		2EFF9590261D734900B40779 /* TopologicalSort1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF958F261D734900B40779 /* TopologicalSort1.swift */; };
 		2EFF9594261D736600B40779 /* TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF9593261D736600B40779 /* TopologicalSort.swift */; };
+		2EFF959C261E608D00B40779 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF959B261E608D00B40779 /* UF.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +95,7 @@
 		2EFF958C261D730500B40779 /* SushiIterative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiIterative.swift; sourceTree = "<group>"; };
 		2EFF958F261D734900B40779 /* TopologicalSort1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort1.swift; sourceTree = "<group>"; };
 		2EFF9593261D736600B40779 /* TopologicalSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopologicalSort.swift; sourceTree = "<group>"; };
+		2EFF959B261E608D00B40779 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				2E4AAA7F260992240011EBB6 /* LCA.swift */,
 				2E333BEB2615395900136BD1 /* SushiReviews.swift */,
 				2EFF95822617DE7200B40779 /* TomatoFarm.swift */,
+				2EFF959B261E608D00B40779 /* UF.swift */,
 				2EFF958F261D734900B40779 /* TopologicalSort1.swift */,
 			);
 			path = Assignment;
@@ -321,6 +324,7 @@
 			files = (
 				2E4AAA4C25FC0F270011EBB6 /* Searching.swift in Sources */,
 				2E4AAA5925FFD9E50011EBB6 /* QueensSolver.swift in Sources */,
+				2EFF959C261E608D00B40779 /* UF.swift in Sources */,
 				2E4AAA5D25FFF7470011EBB6 /* Bag.swift in Sources */,
 				2EAA3E85260C0D3900FE3FFC /* BFS.swift in Sources */,
 				2E4AAA4225F975E80011EBB6 /* ExhaustiveSearch.swift in Sources */,
