@@ -47,7 +47,7 @@ public struct UF {
         // TODO
         while p != parent[p] {
             parent[p] = parent[parent[p]]
-            p = parent[p]
+//            p = parent[p]
         }
         return p
     }

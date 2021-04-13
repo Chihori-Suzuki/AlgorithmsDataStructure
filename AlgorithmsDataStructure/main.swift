@@ -85,4 +85,13 @@ import Foundation
 //sushiReviews()
 
 //print(canFinish(2, [[1,0]]))
-print(findOrder(4, [[1,0],[2,0],[3,1],[3,2]]))
+//print(findOrder(4, [[1,0],[2,0],[3,1],[3,2]]))
+
+//print(findCircleNum([[1,0,0],[0,1,0],[0,0,1]]))
+
+//let costs = [[10, 20], [30, 200], [400, 50], [30, 20]]
+//print(twoCitySchedCost(costs))
+
+//print(canCompleteCircuit([2,3,4], [3,4,3]))
+
+print(partitionLabels("ababcbacadefegdehijhklij"))
