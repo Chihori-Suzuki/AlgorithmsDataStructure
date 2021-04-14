@@ -37,7 +37,7 @@
 		2EAA3E8A260C0D3900FE3FFC /* DFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA3E83260C0D3900FE3FFC /* DFS.swift */; };
 		2EAA3E8B260C0D3900FE3FFC /* AdjacencyMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA3E84260C0D3900FE3FFC /* AdjacencyMatrix.swift */; };
 		2EFF957E2617D2DF00B40779 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF957D2617D2DF00B40779 /* Town.swift */; };
-		2EFF95832617DE7200B40779 /* TomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95822617DE7200B40779 /* TomatoFarm.swift */; };
+		2EFF95832617DE7200B40779 /* TomatoFarmAss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95822617DE7200B40779 /* TomatoFarmAss.swift */; };
 		2EFF958A261D723300B40779 /* sushi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF9589261D723300B40779 /* sushi.swift */; };
 		2EFF958D261D730500B40779 /* SushiIterative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF958C261D730500B40779 /* SushiIterative.swift */; };
 		2EFF9590261D734900B40779 /* TopologicalSort1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF958F261D734900B40779 /* TopologicalSort1.swift */; };
@@ -57,6 +57,8 @@
 		2EFF95BE262511D900B40779 /* PartitionLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95BA262511D900B40779 /* PartitionLabels.swift */; };
 		2EFF95C12625173900B40779 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95C02625173900B40779 /* TaskScheduler.swift */; };
 		2EFF95C526251B1E00B40779 /* IndexPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95C426251B1E00B40779 /* IndexPriorityQueue.swift */; };
+		2EFF95C92626440E00B40779 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95C82626440E00B40779 /* File.swift */; };
+		2EFF95CC2626968A00B40779 /* MininumCostFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95CB2626968A00B40779 /* MininumCostFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -104,7 +106,7 @@
 		2EAA3E83260C0D3900FE3FFC /* DFS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
 		2EAA3E84260C0D3900FE3FFC /* AdjacencyMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdjacencyMatrix.swift; sourceTree = "<group>"; };
 		2EFF957D2617D2DF00B40779 /* Town.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
-		2EFF95822617DE7200B40779 /* TomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoFarm.swift; sourceTree = "<group>"; };
+		2EFF95822617DE7200B40779 /* TomatoFarmAss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomatoFarmAss.swift; sourceTree = "<group>"; };
 		2EFF9589261D723300B40779 /* sushi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sushi.swift; sourceTree = "<group>"; };
 		2EFF958C261D730500B40779 /* SushiIterative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiIterative.swift; sourceTree = "<group>"; };
 		2EFF958F261D734900B40779 /* TopologicalSort1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopologicalSort1.swift; sourceTree = "<group>"; };
@@ -124,6 +126,8 @@
 		2EFF95BA262511D900B40779 /* PartitionLabels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitionLabels.swift; sourceTree = "<group>"; };
 		2EFF95C02625173900B40779 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		2EFF95C426251B1E00B40779 /* IndexPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPriorityQueue.swift; sourceTree = "<group>"; };
+		2EFF95C82626440E00B40779 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		2EFF95CB2626968A00B40779 /* MininumCostFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MininumCostFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,11 +243,12 @@
 				2E4AAA792607E5B40011EBB6 /* Diameter.swift */,
 				2E4AAA7F260992240011EBB6 /* LCA.swift */,
 				2E333BEB2615395900136BD1 /* SushiReviews.swift */,
-				2EFF95822617DE7200B40779 /* TomatoFarm.swift */,
+				2EFF95822617DE7200B40779 /* TomatoFarmAss.swift */,
 				2EFF959B261E608D00B40779 /* UF.swift */,
 				2EFF958F261D734900B40779 /* TopologicalSort1.swift */,
 				2EFF959F261E987B00B40779 /* UF_Exercises.swift */,
 				2EFF95A3261FB26800B40779 /* Greedy.swift */,
+				2EFF95CB2626968A00B40779 /* MininumCostFlow.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				2EFF95B9262511D900B40779 /* DijkstraArray.swift */,
+				2EFF95C82626440E00B40779 /* File.swift */,
 			);
 			path = ShortestPass;
 			sourceTree = "<group>";
@@ -416,6 +422,7 @@
 				2EAA3E89260C0D3900FE3FFC /* AdjacencyList.swift in Sources */,
 				2E4AAA80260992240011EBB6 /* LCA.swift in Sources */,
 				2EAA3E70260BFDF300FE3FFC /* TreeAssignment1.swift in Sources */,
+				2EFF95C92626440E00B40779 /* File.swift in Sources */,
 				2EFF95BC262511D900B40779 /* TwoCityScheduling.swift in Sources */,
 				2EFF958A261D723300B40779 /* sushi.swift in Sources */,
 				2E4AAA6826029C5D0011EBB6 /* TreeTraversal.swift in Sources */,
@@ -425,9 +432,10 @@
 				2EAA3E8B260C0D3900FE3FFC /* AdjacencyMatrix.swift in Sources */,
 				2EAA3E73260BFDFA00FE3FFC /* LCA(linear).swift in Sources */,
 				2EFF95B12624136100B40779 /* CyclicPermutation.swift in Sources */,
+				2EFF95CC2626968A00B40779 /* MininumCostFlow.swift in Sources */,
 				2EFF95BB262511D900B40779 /* GasStation.swift in Sources */,
 				2E4AAA7A2607E5B40011EBB6 /* Diameter.swift in Sources */,
-				2EFF95832617DE7200B40779 /* TomatoFarm.swift in Sources */,
+				2EFF95832617DE7200B40779 /* TomatoFarmAss.swift in Sources */,
 				2EAA3E87260C0D3900FE3FFC /* bipartite.swift in Sources */,
 				2EFF95BD262511D900B40779 /* DijkstraArray.swift in Sources */,
 				2EFF95AE2624136100B40779 /* Bridges.swift in Sources */,

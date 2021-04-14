@@ -7,7 +7,8 @@
 
 import Foundation
 
-func twoCitySchedCost(_ costs: [[Int]]) -> Int {
+// No.1
+func twoCitySchedCost1(_ costs: [[Int]]) -> Int {
     var minCost = 0
     
     let sortedCosts = costs.sorted(by: { first, next in first[0] - first[1] < next[0] - next[1] })
@@ -23,7 +24,8 @@ func twoCitySchedCost(_ costs: [[Int]]) -> Int {
     
 }
 
-func canCompleteCircuit(_ gas: [Int], _ cost: [Int]) -> Int {
+// No.3
+func canCompleteCircuit1(_ gas: [Int], _ cost: [Int]) -> Int {
     let n = gas.count
     var tank = 0
     var start = 0
@@ -47,7 +49,8 @@ func canCompleteCircuit(_ gas: [Int], _ cost: [Int]) -> Int {
     return start
 }
 
-func partitionLabels(_ S: String) -> [Int] {
+// No.4 ababcbacadefegdehijhklij
+func partitionLabels1(_ S: String) -> [Int] {
     var mapchar = [Character: Int]()
     let chars = Array(S)
     for i in 0..<chars.count {

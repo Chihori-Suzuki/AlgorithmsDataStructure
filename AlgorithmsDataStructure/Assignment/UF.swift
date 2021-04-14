@@ -19,7 +19,7 @@ import Foundation
 /// (in the worst case) and **count** takes constant time.
 /// Moreover, the amortized time per **union**, **find**, and **connected** operation
 /// has inverse Ackermann complexity (which is practically < 5 for 2^(2^(2^(2^16))) - undefined number).
-public struct UF {
+public struct UF1 {
     /// parent[i] = parent of i
     private var parent: [Int]
     /// size[i] = number of nodes in tree rooted at i
@@ -45,11 +45,17 @@ public struct UF {
     /// - Returns: the canonical element of the set containing `p`
     public mutating func find(_ p: Int) -> Int {
         // TODO
-        while p != parent[p] {
-            parent[p] = parent[parent[p]]
-//            p = parent[p]
+        var root = p
+        while root != parent[root] {
+            root = parent[root]
         }
-        return p
+        var p = p
+        while p != parent[p] {
+            let new = parent[p]
+            parent[p] = root
+            p = new
+        }
+        return root
     }
     
     /// Returns `true` if the two elements are in the same set.
@@ -59,7 +65,7 @@ public struct UF {
     /// - Returns: `true` if `p` and `q` are in the same set; `false` otherwise
     public mutating func connected(_ p: Int, _ q: Int) -> Bool {
         // TODO
-        return parent[p] == parent[q]
+        return find(p) == find(q)
     }
     
     /// Merges the set containing element `p` with the set containing
@@ -69,12 +75,16 @@ public struct UF {
     ///   - q: the other element
     public mutating func union(_ p: Int, _ q: Int) {
         // TODO
-        if size[p] < size[q] {
-            parent[p] = q
-            size[q] += size[p]
+        let i = find(p)
+        let j = find(q)
+        guard i != j else { return }
+        
+        if size[i] < size[j] {
+            parent[i] = j
+            size[j] += size[i]
         } else {
-            parent[q] = p
-            size[p] += size[q]
+            parent[j] = i
+            size[i] += size[j]
         }
         
     }

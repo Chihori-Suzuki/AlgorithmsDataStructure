@@ -54,9 +54,9 @@ func sushiReviews() {
             targetCount[t] = targetCount[t] + 1
         }
         if targetCount[target] == 0 {
-            for i in adjList[parent] {
-                
-            }
+//            for i in targetCount[parent] {
+//
+//            }
             newList.remove(at: target)
         }
     }
