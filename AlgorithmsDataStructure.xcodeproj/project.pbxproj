@@ -58,7 +58,7 @@
 		2EFF95C12625173900B40779 /* TaskScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95C02625173900B40779 /* TaskScheduler.swift */; };
 		2EFF95C526251B1E00B40779 /* IndexPriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95C426251B1E00B40779 /* IndexPriorityQueue.swift */; };
 		2EFF95C92626440E00B40779 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95C82626440E00B40779 /* File.swift */; };
-		2EFF95CC2626968A00B40779 /* MininumCostFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95CB2626968A00B40779 /* MininumCostFlow.swift */; };
+		2EFF95D02627C8B500B40779 /* MinimumCostFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95CF2627C8B500B40779 /* MinimumCostFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,7 +127,7 @@
 		2EFF95C02625173900B40779 /* TaskScheduler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskScheduler.swift; sourceTree = "<group>"; };
 		2EFF95C426251B1E00B40779 /* IndexPriorityQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPriorityQueue.swift; sourceTree = "<group>"; };
 		2EFF95C82626440E00B40779 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		2EFF95CB2626968A00B40779 /* MininumCostFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MininumCostFlow.swift; sourceTree = "<group>"; };
+		2EFF95CF2627C8B500B40779 /* MinimumCostFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCostFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,7 +248,7 @@
 				2EFF958F261D734900B40779 /* TopologicalSort1.swift */,
 				2EFF959F261E987B00B40779 /* UF_Exercises.swift */,
 				2EFF95A3261FB26800B40779 /* Greedy.swift */,
-				2EFF95CB2626968A00B40779 /* MininumCostFlow.swift */,
+				2EFF95CF2627C8B500B40779 /* MinimumCostFlow.swift */,
 			);
 			path = Assignment;
 			sourceTree = "<group>";
@@ -415,6 +415,7 @@
 				2E4AAA3C25F8211C0011EBB6 /* Recursion.swift in Sources */,
 				2EFF95A4261FB26800B40779 /* Greedy.swift in Sources */,
 				2EFF95A0261E987B00B40779 /* UF_Exercises.swift in Sources */,
+				2EFF95D02627C8B500B40779 /* MinimumCostFlow.swift in Sources */,
 				2EFF95AF2624136100B40779 /* RepeatingSequence.swift in Sources */,
 				2EFF957E2617D2DF00B40779 /* Town.swift in Sources */,
 				2EAA3E7A260C060A00FE3FFC /* GraphAssignment.swift in Sources */,
@@ -432,7 +433,6 @@
 				2EAA3E8B260C0D3900FE3FFC /* AdjacencyMatrix.swift in Sources */,
 				2EAA3E73260BFDFA00FE3FFC /* LCA(linear).swift in Sources */,
 				2EFF95B12624136100B40779 /* CyclicPermutation.swift in Sources */,
-				2EFF95CC2626968A00B40779 /* MininumCostFlow.swift in Sources */,
 				2EFF95BB262511D900B40779 /* GasStation.swift in Sources */,
 				2E4AAA7A2607E5B40011EBB6 /* Diameter.swift in Sources */,
 				2EFF95832617DE7200B40779 /* TomatoFarmAss.swift in Sources */,

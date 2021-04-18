@@ -94,4 +94,6 @@ import Foundation
 
 //print(canCompleteCircuit([2,3,4], [3,4,3]))
 
-print(partitionLabels1("ababcbacadefegdehijhklij"))
+//print(partitionLabels1("ababcbacadefegdehijhklij"))
+
+print(MCF())

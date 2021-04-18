@@ -19,7 +19,7 @@ import Foundation
 /// (in the worst case) and **count** takes constant time.
 /// - Moreover, the amortized time per **union**, **find**, and **connected** operation
 /// has inverse Ackermann complexity (which is practically < 5 for 2^(2^(2^(2^16))) - undefined number).
-public struct UF {
+public struct UF2 {
   /// parent[i] = parent of i
   private var parent: [Int]
   /// size[i] = number of nodes in tree rooted at i
