@@ -15,7 +15,7 @@ public func MCF() -> Int {
     
     var noShortEdges = [(u: Int, v: Int, w: Int, x: Bool)]()
     
-    for i in 1...input[0] {
+    for i in 1...input[1] {
         let line = readLine()!.split(separator: " ").map { Int($0)! }
         if i <= input[0] - 1 {
             allEdges.append((u: line[0], v: line[1], w: line[2], x: true))
@@ -26,6 +26,8 @@ public func MCF() -> Int {
     
     allEdges.sort { $0.w < $1.w }
     
+    for i in allEdges { print(i) }
+    print()
     var uf = UF(allEdges.count+1)
     for edge in allEdges {
         if uf.connected(edge.u, edge.v) {
@@ -36,6 +38,7 @@ public func MCF() -> Int {
         uf.union(edge.u, edge.v)
         mstEdges.append(edge)
     }
+    for i in mstEdges { print(i) }
     
     var inactiveCont = mstEdges.filter({$3 == false}).count  // inactive count in the shortest pass
     

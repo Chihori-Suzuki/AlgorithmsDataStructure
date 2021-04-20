@@ -96,8 +96,8 @@ import Foundation
 
 //print(partitionLabels1("ababcbacadefegdehijhklij"))
 
-//print(MCF())
+print(MCF())
 
 //print(networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2))
 
-print(findCheapestPrice(3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 0))
+//print(findCheapestPrice(3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 0))

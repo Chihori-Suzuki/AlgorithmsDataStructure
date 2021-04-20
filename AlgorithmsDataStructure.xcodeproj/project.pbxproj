@@ -62,6 +62,8 @@
 		2EFF95D5262BF95D00B40779 /* BellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95D3262BF95D00B40779 /* BellmanFord.swift */; };
 		2EFF95D9262BFB4800B40779 /* NetworkDelayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95D8262BFB4800B40779 /* NetworkDelayTime.swift */; };
 		2EFF95DE262CFC6900B40779 /* CheapestFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95DD262CFC6900B40779 /* CheapestFlight.swift */; };
+		2EFF95E1262E53F700B40779 /* Dynamic Programming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95E0262E53F700B40779 /* Dynamic Programming.swift */; };
+		2EFF95E6262E7B0200B40779 /* 1641.Count_Sorted_Vowel_Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF95E5262E7B0200B40779 /* 1641.Count_Sorted_Vowel_Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -134,6 +136,8 @@
 		2EFF95D3262BF95D00B40779 /* BellmanFord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BellmanFord.swift; sourceTree = "<group>"; };
 		2EFF95D8262BFB4800B40779 /* NetworkDelayTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDelayTime.swift; sourceTree = "<group>"; };
 		2EFF95DD262CFC6900B40779 /* CheapestFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheapestFlight.swift; sourceTree = "<group>"; };
+		2EFF95E0262E53F700B40779 /* Dynamic Programming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dynamic Programming.swift"; sourceTree = "<group>"; };
+		2EFF95E5262E7B0200B40779 /* 1641.Count_Sorted_Vowel_Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1641.Count_Sorted_Vowel_Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,7 @@
 		2E4AAA3125F820DB0011EBB6 /* AlgorithmsDataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				2EFF95E3262E7ABB00B40779 /* leetcode */,
 				2EFF95C3262519A900B40779 /* ShortestPass */,
 				2EFF95A62623BD9700B40779 /* Greedy */,
 				2EFF9588261D675000B40779 /* TopologicalSort */,
@@ -180,6 +185,7 @@
 				2E4AAA3A25F820FB0011EBB6 /* Recursion */,
 				2E4AAA6A26029C6B0011EBB6 /* Trees */,
 				2E4AAA86260B16E80011EBB6 /* SampleAnswer */,
+				2EFF95E0262E53F700B40779 /* Dynamic Programming.swift */,
 			);
 			path = AlgorithmsDataStructure;
 			sourceTree = "<group>";
@@ -354,6 +360,22 @@
 			path = ProblemSet8;
 			sourceTree = "<group>";
 		};
+		2EFF95E3262E7ABB00B40779 /* leetcode */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF95E4262E7ACE00B40779 /* DP */,
+			);
+			name = leetcode;
+			sourceTree = "<group>";
+		};
+		2EFF95E4262E7ACE00B40779 /* DP */ = {
+			isa = PBXGroup;
+			children = (
+				2EFF95E5262E7B0200B40779 /* 1641.Count_Sorted_Vowel_Strings.swift */,
+			);
+			name = DP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -415,6 +437,7 @@
 				2E4AAA5925FFD9E50011EBB6 /* QueensSolver.swift in Sources */,
 				2EFF959C261E608D00B40779 /* UF.swift in Sources */,
 				2EFF95D4262BF95D00B40779 /* DijkstraPQ.swift in Sources */,
+				2EFF95E1262E53F700B40779 /* Dynamic Programming.swift in Sources */,
 				2E4AAA5D25FFF7470011EBB6 /* Bag.swift in Sources */,
 				2EAA3E85260C0D3900FE3FFC /* BFS.swift in Sources */,
 				2E4AAA4225F975E80011EBB6 /* ExhaustiveSearch.swift in Sources */,
@@ -449,6 +472,7 @@
 				2EFF95A82623BDA400B40779 /* MSTImplementation.swift in Sources */,
 				2E4AAA5025FC11430011EBB6 /* Sorting.swift in Sources */,
 				2E4AAA4825FAC5980011EBB6 /* BackTracking.swift in Sources */,
+				2EFF95E6262E7B0200B40779 /* 1641.Count_Sorted_Vowel_Strings.swift in Sources */,
 				2EAA3E8B260C0D3900FE3FFC /* AdjacencyMatrix.swift in Sources */,
 				2EAA3E73260BFDFA00FE3FFC /* LCA(linear).swift in Sources */,
 				2EFF95B12624136100B40779 /* CyclicPermutation.swift in Sources */,
