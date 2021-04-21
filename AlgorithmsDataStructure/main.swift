@@ -96,8 +96,17 @@ import Foundation
 
 //print(partitionLabels1("ababcbacadefegdehijhklij"))
 
-print(MCF())
+//print(MCF())
 
 //print(networkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2))
 
 //print(findCheapestPrice(3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 0))
+
+let fileManagers = FileManager.default
+let filePath = "/Users/suzukichihori/Cornerstone/WMAD/Swift_Algorithms&DataStructures/AlgorithmsDataStructure/AlgorithmsDataStructure/Assignment/mcf"
+let contens = try! fileManagers.contentsOfDirectory(atPath: filePath)
+for file in contens.sorted() {
+    if !file.contains(".in") { continue }
+    print(filePath + "/" + file)
+    print(MCF(true, filePath + "/" + file))
+}
